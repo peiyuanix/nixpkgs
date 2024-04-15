@@ -909,6 +909,41 @@ in
       });
     };
 
+    networking.ipvlans = mkOption {
+      default = { };
+      example = literalExpression ''
+        {
+          wan = {
+            interface = "enp2s0";
+            mode = "l2";
+            flags = "bridge";
+          };
+        }
+      '';
+      description = lib.mdDoc ''
+        This option allows you to define ipvlan interfaces which should
+        be automatically created.
+      '';
+      type = with types; attrsOf (submodule {
+        options = {
+
+          interface = mkOption {
+            example = "enp4s0";
+            type = types.str;
+            description = lib.mdDoc "The interface the ipvlan will transmit packets through.";
+          };
+
+          modeWithFlags = mkOption {
+            default = null;
+            type = types.nullOr types.str;
+            example = "l2 bridge";
+            description = lib.mdDoc "The mode and optional mode-flags of the ipvlan device.";
+          };
+        };
+
+      });
+    };
+
     networking.fooOverUDP = mkOption {
       default = { };
       example =

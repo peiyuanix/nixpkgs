@@ -67,6 +67,7 @@ let
     "networking.bridges"
     "networking.interfaces"
     "networking.macvlans"
+    "networking.ipvlans"
     "networking.sits"
     "networking.vlans"
     "services.openssh.startWhenNeeded"
