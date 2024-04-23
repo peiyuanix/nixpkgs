@@ -13459,6 +13459,12 @@
     githubId = 16027994;
     name = "Nathan Viets";
   };
+  nyadiia = {
+    email = "nyadiia@pm.me";
+    github = "nyadiia";
+    githubId = 43252360;
+    name = "Nadia";
+  };
   nyanbinary = {
     email = "vextium@skiff.com";
     github = "nyabinary";
@@ -17834,6 +17840,12 @@
     github = "tckmn";
     githubId = 2389333;
     name = "Andy Tockman";
+  };
+  tcmal = {
+    email = "me@aria.rip";
+    github = "tcmal";
+    githubId = 4183876;
+    name = "Aria Shrimpton";
   };
   teatwig = {
     email = "nix@teatwig.net";
